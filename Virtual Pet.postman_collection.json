@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "74e1fac3-0b4c-4854-8578-641467795bd3",
+		"name": "Virtual Pet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36346648"
+	},
+	"item": [
+		{
+			"name": "PingPong",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/virtualpets/ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"virtualpets",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/virtualpets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"virtualpets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Pet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/virtualpets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"virtualpets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Pet by ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Pet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/virtualpets/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"virtualpets",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

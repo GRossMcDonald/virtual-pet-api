@@ -52,6 +52,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ugly\",\r\n    \"description\": \"Ugly animal.\",\r\n    \"hunger\": \"100\",\r\n    \"thirst\": \"100\",\r\n    \"boredom\": \"100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:8080/api/virtualpets",
 					"protocol": "http",
@@ -69,9 +78,34 @@
 		},
 		{
 			"name": "Find Pet by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/virtualpets/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"virtualpets",
+						"6"
+					]
+				}
 			},
 			"response": []
 		},
